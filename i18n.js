@@ -1,0 +1,112 @@
+const i18n = {
+  en: {
+    siteName: 'ToolVerse',
+    tagline: '38 free browser-based tools for text, code, color, math, time, and web tasks.',
+    headline: 'All-in-one Online Toolbox',
+    subheadline: 'Free, fast, and private. Everything runs in your browser with no uploads or account required.',
+    toolsCount: 'Tools', langsCount: 'Languages', frontendOnly: '', deployReady: '',
+    searchPlaceholder: 'Search tools...', allCategories: 'All', featured: 'Featured', openTool: 'Open',
+    copyResult: 'Copy', downloadFile: 'Download', clear: 'Clear', uploadText: 'Upload file',
+    noToolSelected: 'Select a tool from the grid to get started.',
+    categories: { text: 'Text', code: 'Code', color: 'Color', math: 'Math', date: 'Date', web: 'Web', convert: 'Convert' },
+    footer: '© 2026 ToolVerse. All tools run locally in your browser.',
+    labels: {
+      input: 'Input', output: 'Output', result: 'Result', options: 'Options', text: 'Text', keyword: 'Keyword', replace: 'Replace with',
+      color: 'Color', count: 'Count', format: 'Format', timezone: 'Timezone', url: 'URL', number: 'Number', min: 'Min', max: 'Max',
+      json: 'JSON', html: 'HTML', markdown: 'Markdown', base64: 'Base64', fileName: 'File name', birthDate: 'Birth date',
+      heightCm: 'Height (cm)', weightKg: 'Weight (kg)', length: 'Length', fromUnit: 'From', toUnit: 'To',
+      paragraphs: 'Paragraphs', passwordLength: 'Password length', pattern: 'Pattern', flags: 'Flags', timestamp: 'Timestamp',
+      dateTime: 'Date & time', sourceText: 'Source', formatType: 'Output format'
+    },
+    toolDescriptions: {
+      wordCounter: 'Count words, characters, lines, and reading time.', caseConverter: 'Convert text case formats.',
+      removeDuplicates: 'Remove duplicate lines while preserving order.', sortLines: 'Sort text lines alphabetically.',
+      findReplace: 'Find and replace text instantly.', jsonFormatter: 'Format and validate JSON data.',
+      base64Encoder: 'Encode or decode Base64 strings.', urlEncoder: 'Encode or decode URL components.', hashGenerator: 'Generate SHA-256 hashes.',
+      regexTester: 'Test regular expressions with live matches.', markdownPreview: 'Preview Markdown as HTML.', htmlEscape: 'Escape or unescape HTML entities.',
+      colorConverter: 'Convert between HEX, RGB, and HSL formats.', gradientMaker: 'Create CSS linear gradients.', paletteGenerator: 'Generate color palettes.',
+      bmiCalculator: 'Calculate BMI from height and weight.', percentageCalc: 'Calculate percentages easily.', randomNumber: 'Generate random integers.',
+      ageCalculator: 'Calculate age from birth date.', unixConverter: 'Convert dates and Unix timestamps.', timezoneConverter: 'Convert across timezones.',
+      uuidGenerator: 'Generate random UUIDs.', qrGenerator: 'Generate scannable QR codes.', passwordGenerator: 'Generate strong passwords.',
+      loremIpsum: 'Generate placeholder text.', textReverser: 'Reverse text characters.', lineCounter: 'Count text lines.',
+      csvToJson: 'Convert CSV data to JSON.', jsonToCsv: 'Convert JSON arrays to CSV.', numberBase: 'Convert number bases.',
+      cronHelper: 'Interpret cron expressions in plain language.', unitConverter: 'Convert length units.', imageToBase64: 'Convert images to Base64.',
+      textToList: 'Format text as lists.', duplicateChecker: 'Find and count duplicate lines.', keywordExtractor: 'Extract frequent keywords.',
+      readingTime: 'Estimate reading time.', htmlStripper: 'Remove HTML tags from text.'
+    },
+    toolLabels: { modeEncode: 'Encode', modeDecode: 'Decode', ascending: 'Ascending', descending: 'Descending', copy: 'Copy', generate: 'Generate', preview: 'Preview', upper: 'UPPER', lower: 'lower', title: 'Title Case', slug: 'slug-case' },
+    cronMap: { everyMinute: 'Every minute', everyHour: 'Every hour', everyDay: 'Every day', everyWeek: 'Every week', everyMonth: 'Every month', custom: 'Custom expression' }
+  },
+  'zh-Hant': {
+    siteName: 'ToolVerse',
+    tagline: '38 個免費瀏覽器工具，涵蓋文字、程式、顏色、數學、時間與網頁需求。',
+    headline: '萬能線上工具箱',
+    subheadline: '免費、快速、私密。所有工具在您的瀏覽器中執行，無需上傳或註冊帳號。',
+    toolsCount: '工具數量', langsCount: '語言', frontendOnly: '', deployReady: '',
+    searchPlaceholder: '搜尋工具...', allCategories: '全部', featured: '精選', openTool: '開啟',
+    copyResult: '複製', downloadFile: '下載', clear: '清空', uploadText: '上傳檔案',
+    noToolSelected: '請從左側工具列表中選擇一個工具開始使用。',
+    categories: { text: '文字', code: '程式', color: '顏色', math: '數學', date: '日期時間', web: '網頁', convert: '轉換' },
+    footer: '© 2026 ToolVerse。所有工具在瀏覽器本地執行。',
+    labels: {
+      input: '輸入', output: '輸出', result: '結果', options: '選項', text: '文字', keyword: '關鍵字', replace: '取代為',
+      color: '顏色', count: '數量', format: '格式', timezone: '時區', url: '網址', number: '數字', min: '最小值', max: '最大值',
+      json: 'JSON', html: 'HTML', markdown: 'Markdown', base64: 'Base64', fileName: '檔名', birthDate: '出生日期',
+      heightCm: '身高（cm）', weightKg: '體重（kg）', length: '長度', fromUnit: '來源', toUnit: '目標',
+      paragraphs: '段落數', passwordLength: '密碼長度', pattern: '表達式', flags: '旗標', timestamp: '時間戳', dateTime: '日期時間', sourceText: '原始', formatType: '輸出格式'
+    },
+    toolDescriptions: {
+      wordCounter: '統計字數、字元數、行數與閱讀時間。', caseConverter: '轉換文字大小寫格式。', removeDuplicates: '移除重複行並保留順序。',
+      sortLines: '將文字行按字母排序。', findReplace: '即時查找並取代文字。', jsonFormatter: '格式化並驗證 JSON。',
+      base64Encoder: '進行 Base64 編碼或解碼。', urlEncoder: '進行網址編碼或解碼。', hashGenerator: '生成 SHA-256 雜湊值。',
+      regexTester: '即時測試正規表示式。', markdownPreview: '預覽 Markdown 轉 HTML。', htmlEscape: '轉義或還原 HTML 實體。',
+      colorConverter: '在 HEX、RGB、HSL 格式間轉換。', gradientMaker: '生成 CSS 線性漸層。', paletteGenerator: '生成配色色盤。',
+      bmiCalculator: '依身高體重計算 BMI。', percentageCalc: '輕鬆計算百分比。', randomNumber: '生成隨機整數。',
+      ageCalculator: '依出生日期計算年齡。', unixConverter: '轉換日期與 Unix 時間戳。', timezoneConverter: '跨時區轉換。',
+      uuidGenerator: '生成隨機 UUID。', qrGenerator: '生成可掃描的 QR Code。', passwordGenerator: '生成高強度密碼。',
+      loremIpsum: '生成佔位文字。', textReverser: '反轉文字。', lineCounter: '統計文字行數。',
+      csvToJson: '將 CSV 轉為 JSON。', jsonToCsv: '將 JSON 轉為 CSV。', numberBase: '轉換數字進制。',
+      cronHelper: '用自然語言解讀 cron 表達式。', unitConverter: '換算長度單位。', imageToBase64: '將圖片轉為 Base64。',
+      textToList: '將文字格式化為清單。', duplicateChecker: '找出並統計重複行。', keywordExtractor: '擷取高頻關鍵詞。',
+      readingTime: '估算閱讀時間。', htmlStripper: '移除文字中的 HTML 標籤。'
+    },
+    toolLabels: { modeEncode: '編碼', modeDecode: '解碼', ascending: '升冪', descending: '降冪', copy: '複製', generate: '生成', preview: '預覽', upper: '大寫', lower: '小寫', title: '標題格式', slug: 'slug 格式' },
+    cronMap: { everyMinute: '每分鐘', everyHour: '每小時', everyDay: '每天', everyWeek: '每週', everyMonth: '每月', custom: '自訂表達式' }
+  },
+  ja: {
+    siteName: 'ToolVerse',
+    tagline: 'テキスト、コード、カラー、計算、時間、Web向けの38個の無料ブラウザツール。',
+    headline: 'オールインワンオンラインツールボックス',
+    subheadline: '無料・高速・プライベート。すべてブラウザ内で実行され、アップロードやアカウントは不要です。',
+    toolsCount: 'ツール数', langsCount: '言語', frontendOnly: '', deployReady: '',
+    searchPlaceholder: 'ツールを検索...', allCategories: 'すべて', featured: '注目', openTool: '開く',
+    copyResult: 'コピー', downloadFile: '保存', clear: 'クリア', uploadText: 'ファイルをアップロード',
+    noToolSelected: '左側のツールを選択して開始してください。',
+    categories: { text: 'テキスト', code: 'コード', color: 'カラー', math: '計算', date: '日時', web: 'Web', convert: '変換' },
+    footer: '© 2026 ToolVerse。すべてのツールはブラウザ内で実行されます。',
+    labels: {
+      input: '入力', output: '出力', result: '結果', options: 'オプション', text: 'テキスト', keyword: 'キーワード', replace: '置換後',
+      color: '色', count: '数', format: '形式', timezone: 'タイムゾーン', url: 'URL', number: '数値', min: '最小', max: '最大',
+      json: 'JSON', html: 'HTML', markdown: 'Markdown', base64: 'Base64', fileName: 'ファイル名', birthDate: '生年月日',
+      heightCm: '身長 (cm)', weightKg: '体重 (kg)', length: '長さ', fromUnit: '変換元', toUnit: '変換先',
+      paragraphs: '段落数', passwordLength: 'パスワード長', pattern: 'パターン', flags: 'フラグ', timestamp: 'タイムスタンプ', dateTime: '日時', sourceText: '元データ', formatType: '出力形式'
+    },
+    toolDescriptions: {
+      wordCounter: '単語数、文字数、行数、読了時間を集計します。', caseConverter: '文字の大文字小文字を変換します。', removeDuplicates: '重複行を削除し順序を維持します。',
+      sortLines: '行をアルファベット順に並べ替えます。', findReplace: '即時に検索置換します。', jsonFormatter: 'JSON を整形して検証します。',
+      base64Encoder: 'Base64 のエンコード・デコードを行います。', urlEncoder: 'URL 文字列をエンコード・デコードします。', hashGenerator: 'SHA-256 ハッシュを生成します。',
+      regexTester: '正規表現をライブで試します。', markdownPreview: 'Markdown を HTML としてプレビューします。', htmlEscape: 'HTML エンティティのエスケープと解除を行います。',
+      colorConverter: 'HEX、RGB、HSL を相互変換します。', gradientMaker: 'CSS 線形グラデーションを作成します。', paletteGenerator: 'カラーパレットを生成します。',
+      bmiCalculator: '身長と体重から BMI を計算します。', percentageCalc: 'パーセンテージを簡単に計算します。', randomNumber: 'ランダムな整数を生成します。',
+      ageCalculator: '生年月日から年齢を計算します。', unixConverter: '日付と Unix タイムスタンプを変換します。', timezoneConverter: 'タイムゾーン間で変換します。',
+      uuidGenerator: 'ランダムな UUID を生成します。', qrGenerator: 'スキャン可能な QR コードを生成します。', passwordGenerator: '強力なパスワードを生成します。',
+      loremIpsum: 'ダミーテキストを生成します。', textReverser: '文字列を反転します。', lineCounter: '行数をカウントします。',
+      csvToJson: 'CSV を JSON に変換します。', jsonToCsv: 'JSON を CSV に変換します。', numberBase: '数の基数を変換します。',
+      cronHelper: 'cron 式を自然文で説明します。', unitConverter: '長さ単位を変換します。', imageToBase64: '画像を Base64 に変換します。',
+      textToList: 'テキストをリスト形式にします。', duplicateChecker: '重複行を見つけてカウントします。', keywordExtractor: '頻出キーワードを抽出します。',
+      readingTime: '読了時間を推定します。', htmlStripper: 'テキストから HTML タグを削除します。'
+    },
+    toolLabels: { modeEncode: 'エンコード', modeDecode: 'デコード', ascending: '昇順', descending: '降順', copy: 'コピー', generate: '生成', preview: 'プレビュー', upper: '大文字', lower: '小文字', title: 'タイトル', slug: 'slug' },
+    cronMap: { everyMinute: '毎分', everyHour: '毎時', everyDay: '毎日', everyWeek: '毎週', everyMonth: '毎月', custom: 'カスタム式' }
+  }
+};
